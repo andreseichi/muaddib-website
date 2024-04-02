@@ -18,7 +18,7 @@ export function Header() {
         scrollPosition > 0 ? "backdrop-blur-sm border-b" : "bg-transparent",
       )}
     >
-      <div className="flex h-20 items-center px-32">
+      <div className="flex h-24 items-center px-32">
         <div className="flex items-center space-x-10">
           <h1>Muad&apos;dib</h1>
 

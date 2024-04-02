@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 
-export function NavigationMenuComponent() {
+export function NavigationMenuHeader() {
   return (
     <NavigationMenu>
       <NavigationMenuList>

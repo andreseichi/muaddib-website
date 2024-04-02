@@ -1,18 +1,12 @@
 import Image from "next/image";
-import { ModeToggle } from "@/components/mode-toggle";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
-import { NavigationMenuComponent } from "@/components/navigation-menu";
-import { Button, buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
+
 import { Icons } from "@/components/icons";
+import { ModeToggle } from "@/components/mode-toggle";
+import { NavigationMenuHeader } from "@/components/navigation-menu-header";
+import { buttonVariants } from "@/components/ui/button";
+
+import { cn } from "@/lib/utils";
 
 export default function Home() {
   return (
@@ -22,7 +16,7 @@ export default function Home() {
           <div className="flex items-center space-x-10">
             <h1>Muad&apos;dib</h1>
 
-            <NavigationMenuComponent />
+            <NavigationMenuHeader />
           </div>
 
           <div className="ml-auto flex items-center space-x-1">

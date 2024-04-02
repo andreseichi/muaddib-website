@@ -14,7 +14,9 @@ export function NavigationMenuHeader() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Navegação</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="bg-transparent">
+            Navegação
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="flex flex-col space-y-1 w-[200px] p-2">
               <ListItem title="Home" href="#home" />

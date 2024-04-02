@@ -1,70 +1,12 @@
 import Image from "next/image";
-import Link from "next/link";
 
-import { Icons } from "@/components/icons";
-import { ModeToggle } from "@/components/mode-toggle";
-import { NavigationMenuHeader } from "@/components/navigation-menu-header";
-import { buttonVariants } from "@/components/ui/button";
-
-import { cn } from "@/lib/utils";
+import { Header } from "@/components/header";
 
 export default function Home() {
   return (
     <>
-      <header className="sticky left-0 right-0 top-0 z-50 border-b bg-background">
-        <div className="flex h-16 items-center px-32">
-          <div className="flex items-center space-x-10">
-            <h1>Muad&apos;dib</h1>
+      <Header />
 
-            <NavigationMenuHeader />
-          </div>
-
-          <div className="ml-auto flex items-center space-x-1">
-            <Link target="_blank" rel="noreferrer" href="#">
-              <div
-                className={cn(
-                  buttonVariants({
-                    variant: "ghost",
-                  }),
-                  "w-9 px-0",
-                )}
-              >
-                <Icons.gitHub className="h-4 w-4" />
-              </div>
-            </Link>
-
-            <Link target="_blank" rel="noreferrer" href="#">
-              <div
-                className={cn(
-                  buttonVariants({
-                    variant: "ghost",
-                  }),
-                  "w-9 px-0",
-                )}
-              >
-                <Icons.linkedin className="h-4 w-4" />
-              </div>
-            </Link>
-
-            <Link target="_blank" rel="noreferrer" href="#">
-              <div
-                className={cn(
-                  buttonVariants({
-                    variant: "ghost",
-                  }),
-                  "w-9 px-0",
-                )}
-              >
-                <Icons.twitter className="h-4 w-4" />
-              </div>
-            </Link>
-
-            <div className="pl-6">
-              <ModeToggle />
-            </div>
-          </div>
-        </div>
-      </header>
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
           <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">

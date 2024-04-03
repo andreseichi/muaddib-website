@@ -18,7 +18,10 @@ export default function Home() {
     <>
       <Header />
 
-      <section className="flex h-screen flex-col items-center justify-between p-24 pt-40">
+      <section
+        id="home"
+        className="flex h-screen flex-col items-center justify-between p-24 pt-40"
+      >
         <div className="z-10 flex w-full flex-col items-center justify-center">
           <div className="flex flex-col items-center space-y-5">
             <div className="group relative">

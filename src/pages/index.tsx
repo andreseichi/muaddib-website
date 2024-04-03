@@ -18,21 +18,21 @@ export default function Home() {
     <>
       <Header />
 
-      <section className="h-screen flex flex-col items-center justify-between p-24 pt-40">
-        <div className="z-10 w-full items-center justify-center flex flex-col">
+      <section className="flex h-screen flex-col items-center justify-between p-24 pt-40">
+        <div className="z-10 flex w-full flex-col items-center justify-center">
           <div className="flex flex-col items-center space-y-5">
-            <div className="relative group">
-              <div className="absolute -inset-0.5 bg-pink-600 rounded-full blur opacity-75 bg-gradient-to-r from-pink-600 to-purple-600 group-hover:opacity-90 transition duration-300 animate-tilt"></div>
-              <p className="border relative rounded-full font-mono text-xs shadow p-3 border-gray-300 bg-gradient-to-b from-zinc-200 backdrop-blur-2xl bg-gray-200 dark:border-neutral-800 dark:bg-slate-900 dark:from-inherit">
+            <div className="group relative">
+              <div className="absolute -inset-0.5 animate-tilt rounded-full bg-pink-600 bg-gradient-to-r from-pink-600 to-purple-600 opacity-75 blur transition duration-300 group-hover:opacity-90"></div>
+              <p className="relative rounded-full border border-gray-300 bg-gray-200 bg-gradient-to-b from-zinc-200 p-3 font-mono text-xs shadow backdrop-blur-2xl dark:border-neutral-800 dark:bg-slate-900 dark:from-inherit">
                 Impulsione sua empresa de forma profissional com a{" "}
-                <span className="group-hover:text-purple-400 transition duration-200 font-semibold">
+                <span className="font-semibold transition duration-200 group-hover:text-purple-400">
                   Muad&apos;dib
                 </span>
                 !
               </p>
             </div>
 
-            <h2 className="text-7xl font-medium leading-tight text-center">
+            <h2 className="text-center text-7xl font-medium leading-tight">
               Inove{" "}
               <span className="font-extrabold">
                 {text}
@@ -42,7 +42,7 @@ export default function Home() {
               Lorem ipsum.
             </h2>
 
-            <span className="max-w-[400px] text-center text-sm font-light pt-2">
+            <span className="max-w-[400px] pt-2 text-center text-sm font-light">
               Conheça nossos serviços maravilhosos e bla bla bla e impressione
               seus clientes.
             </span>

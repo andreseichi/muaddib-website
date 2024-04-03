@@ -18,7 +18,7 @@ export function NavigationMenuHeader() {
             Navegação
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="flex flex-col space-y-1 w-[200px] p-2">
+            <ul className="flex w-[200px] flex-col space-y-1 p-2">
               <ListItem title="Home" href="#home" />
               <ListItem title="Sobre nós" href="#about" />
               <ListItem title="Nossa equipe" href="#team" />

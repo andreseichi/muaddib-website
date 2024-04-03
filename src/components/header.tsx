@@ -15,7 +15,7 @@ export function Header() {
     <header
       className={cn(
         "fixed left-0 right-0 top-0 z-50",
-        scrollPosition > 0 ? "backdrop-blur-sm border-b" : "bg-transparent",
+        scrollPosition > 20 ? "backdrop-blur-sm border-b" : "bg-transparent",
       )}
     >
       <div className="flex h-24 items-center px-32">

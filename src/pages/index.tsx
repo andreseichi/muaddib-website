@@ -51,6 +51,45 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section
+        id="about"
+        className="flex h-screen flex-col items-center justify-between bg-purple-100 p-24 pt-40 dark:bg-slate-900"
+      >
+        <div className="flex w-full flex-1 items-center justify-between space-x-10">
+          <div className="flex flex-1 flex-col space-y-2">
+            <span className="text-3xl font-medium">
+              Conheça nossa{" "}
+              <span className="text-purple-600 dark:text-purple-400">
+                equipe
+              </span>
+            </span>
+
+            <span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              eveniet similique hic praesentium non dignissimos consequatur
+              deleniti numquam quisquam aspernatur, pariatur id enim error
+              quaerat recusandae maiores aliquam nobis, debitis quis ullam
+              deserunt eligendi? Earum sit molestiae maxime similique labore?
+            </span>
+
+            <div className="pt-8">
+              <Button>Ler mais</Button>
+            </div>
+          </div>
+
+          <div className="flex-1 object-cover object-center">
+            <Image
+              src="/team.png"
+              width={400}
+              height={400}
+              priority
+              alt="Nossa equipe"
+              className="object cover h-full w-full object-center"
+            />
+          </div>
+        </div>
+      </section>
     </>
   );
 }

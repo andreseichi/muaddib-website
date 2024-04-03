@@ -45,7 +45,7 @@ export default function Home() {
               Lorem ipsum.
             </h2>
 
-            <span className="max-w-[400px] pt-2 text-center text-sm font-light">
+            <span className="max-w-[400px] pt-2 text-center font-light">
               Conheça nossos serviços maravilhosos e bla bla bla e impressione
               seus clientes.
             </span>

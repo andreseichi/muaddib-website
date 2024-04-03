@@ -1,9 +1,19 @@
 import Image from "next/image";
 
+import { Cursor, useTypewriter } from "react-simple-typewriter";
+
 import { Header } from "@/components/header";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
+  const [text] = useTypewriter({
+    words: ["seu negócio", "sua fama", "seu site", "sua visibilidade"],
+    loop: true,
+    delaySpeed: 2000,
+    typeSpeed: 80,
+    deleteSpeed: 50,
+  });
+
   return (
     <>
       <Header />
@@ -23,7 +33,12 @@ export default function Home() {
             </div>
 
             <h2 className="text-7xl font-medium leading-tight text-center">
-              Inove seu <span className="font-extrabold">negócio</span>. <br />
+              Inove{" "}
+              <span className="font-extrabold">
+                {text}
+                <Cursor cursorColor="#eee" cursorStyle="█" />
+              </span>
+              <br />
               Lorem ipsum.
             </h2>
 
